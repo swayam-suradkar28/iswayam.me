@@ -1,0 +1,349 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro:wght@300&family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    font-size: 16px;
+}
+.sidebar{
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #e7e7e7;
+    height: 100vh;
+    position: absolute;
+    filter:drop-shadow(0 1px 3px rgb(70, 70, 70));
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav {
+    padding: 30px;
+}
+
+.sidebar nav li{
+    padding: 30px 0;
+    font-size: 1rem;
+    list-style: none;
+}
+
+.sidebar nav li a {
+   text-decoration: none;
+   color: rgb(0, 0, 0);
+   cursor: pointer;
+}
+
+.sidebar nav li a:hover{
+    text-decoration: none;
+    color: #ef9273;
+    cursor: pointer;
+ }
+
+
+.main {
+    /*background-color: yellow;*/
+    width: 90vw;
+}
+
+.devPic img {
+    height: 55vh;
+    align-items: right;
+    align-items: baseline; 
+}
+
+
+.divInfo {
+    font-size:16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+    padding-left: 25px;
+    color: #0d0d0d;
+}
+.hello{
+    font-size: 3em;
+    margin: 5px 0;
+}
+.name{
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+    margin: 7px 0;
+}
+.about{
+    font-size: 2em;
+    margin: 7px 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+.moreAbout {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.3em;
+    margin: 7px 0;
+}
+.buttons {
+    margin-top: 1rem;
+    font-size: 10px;
+}
+
+.buttons button{
+    margin: 0 3 px;
+    font-size: 1.5em;
+    padding: 8px 14px;
+    border-radius:22px;
+    color:white;
+    background-color: #ef9273;
+    cursor:pointer;
+    border-color: transparent;
+    font-family: 'Ubuntu', sans-serif;
+    /*filter:drop-shadow(0 1px 3px rgb(70, 70, 70));*/
+    
+}
+#btn2 {
+    margin-left: 18px;
+}
+
+.buttons button:hover{
+    background-color:white;
+    color: #ef9273;
+    filter:drop-shadow(0 1px 3px rgb(70, 70, 70));
+    font-weight: bold;
+}
+
+.infoContainer {
+    display: flex;
+    padding: 20px 34px;
+    padding-bottom: 35px;
+    width: 80vw;
+    margin: 70px 30px;
+    background-color: #fff4d5;
+    border-radius: 20px;
+    
+}
+
+
+.contactform{
+    padding: 20px 34px;
+    padding-bottom: 35px;
+    width: 80vw;
+    margin: 70px 30px;
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #fff4d5;
+    border-radius: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.contactform h1{
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 22px;
+    padding-bottom: 18px;
+    font-size: 2rem;
+}
+
+.contactform form div {
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+}
+
+.contactform form div input{
+   
+    border-radius: 7px;
+    margin: 5px 5px 5px 5px;
+    padding: 7px;
+    background-color: rgb(218, 218, 218);
+    border-color: transparent;
+}
+.contactform form div input:hover{
+    background-color: rgb(252, 252, 252);
+    border-color: #0d0d0d;
+}
+
+#emailHelp{
+    font-size: 0.5rem;
+    color: midnightblue;
+    margin: 0 20px;
+}
+#formcheck {
+    flex-direction: row;
+    font-size: 0.8rem;
+    margin-bottom: 18px;
+}
+#formcheck input{
+    width: 15px;
+    margin: 0;
+    
+}
+
+.btn {
+    padding: 9px 12px;
+    border-radius:22px;
+    color:white;
+    background-color: #ef9273;
+    cursor:pointer;
+    border-color: transparent;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    
+}
+
+.btn:hover{
+    background-color:white;
+    color: #ef9273;
+    /*border-color: #0d0d0d;*/
+    font-weight: bold;
+}
+
+.blogContainer {
+    display: flex;
+    padding: 20px 34px;
+    padding-bottom: 35px;
+    width: 80vw;
+    margin: 70px 30px;
+    background-color: #fff4d5;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+.blogContainer h1 {
+    font-family: 'Ubuntu';
+    margin: 12px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+.blogItem h2{
+    font-family: 'Fira Sans', sans-serif;
+    margin: 12px;
+    padding: 10px 0;
+}
+.blogItem p{
+    margin:12px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.blogItem button{
+    margin: 7px 12px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 34px;
+    padding-bottom: 35px;
+    width: 80vw;
+    margin: 70px 30px;
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #fff4d5;
+    border-radius: 20px;
+    flex-wrap: wrap;
+
+}
+
+.intro h2 {
+    font-family: 'Fira Sans', sans-serif;
+    margin: 12px;
+    padding: 10px 0;
+}
+.intro h1 {
+    font-family: 'Ubuntu';
+    margin: 12px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+.intro p {
+    margin:12px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+
+.skillContainer {
+    
+}
+
+.skill{
+    width:265px;
+    height: 6px;
+    background-color: #ef9273;
+    border: 1.5px solid #0d0d0d;   
+}
+
+.skillItem {
+    display: flex;
+    align-items: center;
+    margin: 12px;
+    font-size: 17px;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.hundred{
+    width:265px;
+    border-color: #0d0d0d;
+}
+
+.fifty {
+    width: 132.5px;
+    border-color: #0d0d0d;
+}
+
+.t5 {
+    width: 66.25px;
+    border-color: #0d0d0d;
+}.project h2 {
+    padding-top: 10px;
+}
+.project  li {
+    font-size: 17px;
+    margin: 12px;
+    list-style-position: inside;
+}
+
+.ham {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 23px;
+    height: 23px;
+}
+.back {
+    margin-left: 90px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+}
+.sidebarGo {
+    transform: translate(-433px,0px);
+    position: absolute;
+}
+
+
+@media (max-width:1500px) {
+    .devPic {
+        display: none;
+    }
+    .divInfo {
+        font-size: 10px;
+    }
+    .buttons{
+        font-size: 6px;
+    }
+    .container{
+        font-size: 10px;
+    }
+    
+}
+
+
+
+
+
